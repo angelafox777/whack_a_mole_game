@@ -1,9 +1,49 @@
-/* Your code here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Game Board */
+
+.wgs {
+  width: 160px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.wgs__mole-head {
+  width: 94px;
+  height: 89px;
+  position: absolute;
+  left: 28px;
+  transition: margin-top;
+  transition-duration: .25s;
+}
+
+.wgs__dirt-pile {
+  width: 160px;
+  height: 55px;
+  position: absolute;
+  top: 65px;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 120px;
+}
+
+.pf {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  background-color: white;
+}
 
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+.sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +52,17 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+.sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
 } */
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+} 
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+}
